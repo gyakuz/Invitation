@@ -1,0 +1,11 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "Xiao & Chen",
+  "usingComponents": {
+    "t-image": "tdesign-miniprogram/image/image",
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "time-line": "./timeLine/index",
+    "console-line": "./consoleLine/index",
+    "code-line": "./code/index"
+  }
+}

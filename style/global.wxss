@@ -1,0 +1,8 @@
+page {
+  font-family: 'xcFont', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  line-height: 1.6;
+  --primary-color: #8c5656;
+  --bg-color: #73231d;
+  --en-color: #c1092f;
+
+}

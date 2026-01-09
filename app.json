@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/code/index",
+    "pages/admin/index",
+    "pages/map/index",
+    "pages/photo/index"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "componentFramework": "glass-easel",
+  "renderer": "skyline",
+  "usingComponents": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "肖亚&陈本拯婚礼",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}
