@@ -10,7 +10,7 @@ export const locationMap = {
     longitude: 105.624569,
   },
   "wuhan": {
-    date: '2025-05-10',
+    date: '2026-10-06',
     year: 2025,
     month: 5,
     day: 10,
@@ -54,6 +54,6 @@ export const friendMap = {
 }
 
 export const info = {
-  woman: '肖亚',
-  man: '陈本拯',
+  woman: '周真',
+  man: '钟家勇',
 }

@@ -1,4 +1,7 @@
 <music />
+<view class="back-btn-fixed" bindtap="onBack">
+  <t-icon name="chevron-left" size="48rpx" color="#fff" />
+</view>
 <scroll-view class="map-container" scroll-y enhanced paging-enabled>
   <poster info="{{info}}" />
   <invite8 />

@@ -3,7 +3,8 @@
     "pages/code/index",
     "pages/admin/index",
     "pages/map/index",
-    "pages/photo/index"
+    "pages/photo/index",
+    "pages/player/index"
   ],
   "requiredBackgroundModes": [
     "audio"
@@ -24,7 +25,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "肖亚&陈本拯婚礼",
+    "navigationBarTitleText": "周真&钟家勇婚礼",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#fff",
     "enablePullDownRefresh": false

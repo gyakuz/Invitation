@@ -1,0 +1,2181 @@
+<view class="page">
+  <!-- 顶部导航 -->
+  <view class="topbar">
+    <view class="topbar-left" bindtap="onBack">
+      <t-icon name="chevron-left" size="48rpx" />
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="topbar-title">正在播放  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="topbar-right">  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+  <!-- 唱片区域 -->
+  <view class="turntable-container">
+    <view class="turntable">
+      <view class="needle {{isPlaying ? 'playing' : ''}}">
+        <view class="needle-base">  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <view class="needle-arm">  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <view class="needle-head">  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+      <view class="disc {{isPlaying ? 'spinning' : ''}}">
+        <view class="disc-groove">  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <image class="album" src="{{albumImage}}" mode="aspectFill" />
+        <view class="disc-label">  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+  <!-- 歌曲信息 -->
+  <view class="meta">
+    <view class="song-title">{{songTitle}}  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="song-sub">{{artist}}  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+  <!-- 操作按钮行 -->
+  <view class="actions">
+    <view class="action-item {{isLiked ? 'active' : ''}}" bindtap="onToggleLike">
+      <t-icon name="{{isLiked ? 'heart-filled' : 'heart'}}" size="48rpx" />
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="action-item" bindtap="onOpenComments">
+      <t-icon name="chat" size="48rpx" />
+      <text class="badge" wx:if="{{comments.length}}">{{comments.length}}</text>
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="action-item" bindtap="onAddressTap">
+      <t-icon name="location" size="48rpx" />
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="action-item" bindtap="onPhotoTap">
+      <t-icon name="image" size="48rpx" />
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="action-item" bindtap="onOpenForm">
+      <t-icon name="edit-1" size="48rpx" />
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+  <!-- 进度条 -->
+  <view class="progress">
+    <text class="time">{{currentTimeText}}</text>
+    <slider class="slider" min="0" max="{{duration}}" value="{{currentTime}}" activeColor="rgba(255,255,255,0.8)" backgroundColor="rgba(255,255,255,0.15)" block-color="#fff" block-size="12" bindchange="onSeek" />
+    <text class="time">{{durationText}}</text>
+    <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+  <!-- 播放控制 -->
+  <view class="controls">
+    <view class="ctrl" bindtap="onPrev">
+      <t-icon name="previous-light" size="56rpx" />
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="ctrl play" bindtap="onTogglePlay">
+      <t-icon name="{{isPlaying ? 'pause-circle-filled' : 'play-circle-filled'}}" size="100rpx" />
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <view class="ctrl" bindtap="onNext">
+      <t-icon name="next-light" size="56rpx" />
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+    <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+  <!-- 评论弹窗 -->
+  <t-popup visible="{{showComments}}" placement="bottom" bind:visible-change="onCloseComments" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">评论 {{comments.length}}  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+          <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+      <scroll-view class="comment-list" scroll-y enhanced show-scrollbar="{{false}}">
+        <view wx:for="{{comments}}" wx:key="id" class="comment-item">
+          <t-avatar image="{{item.avatar}}" size="medium" />
+          <view class="comment-body">
+            <view class="comment-meta">
+              <view class="user-info">
+                <text class="comment-user">{{item.user}}</text>
+                <view class="user-tag" wx:if="{{index === 0}}">
+                  <t-icon name="check-circle-filled" size="24rpx" color="#4CAF50" />
+                  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+                <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+              <view class="comment-time-info">
+                <text class="comment-time">{{item.time}}</text>
+                <text class="comment-view">· 看过</text>
+                <view class="stars">
+                  <t-icon name="star-filled" size="20rpx" color="#FF9800" wx:for="{{4}}" wx:key="*this" />
+                  <t-icon name="star-filled" size="20rpx" color="#E0E0E0" />
+                  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+                <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+              <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+            <view class="comment-text">{{item.content}}  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+            <view class="comment-footer">
+              <text class="likes">{{item.likes}} 赞</text>
+              <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+            <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+          <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <view class="safe-area-inset-bottom">  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+      </scroll-view>
+      
+      <!-- 写评论悬浮按钮 -->
+      <view class="write-comment-btn">
+        <t-icon name="edit" size="48rpx" color="#fff" />
+        <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+  </t-popup>
+
+  <!-- 页面入口弹窗 -->
+  <t-popup visible="{{showPages}}" placement="bottom" bind:visible-change="onClosePages" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">选择页面  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+          <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <view class="sheet-close" bindtap="onClosePages">
+          <t-icon name="close" size="40rpx" />
+          <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+
+      <view class="menu-list">
+        <view wx:for="{{pageEntries}}" wx:key="key" class="menu-item" bindtap="onGoPage" data-key="{{item.key}}">
+          <view class="menu-icon">
+            <t-icon name="{{item.key === 'map' ? 'mail' : item.key === 'photo' ? 'image' : 'edit'}}" size="44rpx" />
+            <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+          <view class="menu-info">
+            <view class="menu-title">{{item.title}}  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+            <view class="menu-desc">{{item.desc}}  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+            <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+          <t-icon name="chevron-right" size="36rpx" color="rgba(255,255,255,0.4)" />
+          <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <view class="safe-area-inset-bottom">  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+        <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+      <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>
+  </t-popup>
+  <!-- 信息填写弹窗 -->
+  <t-popup visible="{{showForm}}" placement="bottom" bind:visible-change="onCloseForm" round>
+    <view class="comment-sheet">
+      <view class="comment-header">
+        <view class="comment-tabs">
+          <view class="tab active">回执填写</view>
+        </view>
+        <view class="sheet-close" bindtap="onCloseForm">
+          <t-icon name="close" size="40rpx" />
+        </view>
+      </view>
+      
+      <scroll-view class="form-scroll" scroll-y>
+        <view class="form-container">
+          <view class="form-item">
+            <view class="label">姓名</view>
+            <input class="input" placeholder="请输入姓名" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">参加人数</view>
+            <input class="input" type="number" placeholder="请输入人数" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">联系电话</view>
+            <input class="input" type="number" placeholder="请输入电话" placeholder-style="color: #999" />
+          </view>
+          <view class="form-item">
+            <view class="label">祝福语</view>
+            <textarea class="textarea" placeholder="写下您的祝福..." placeholder-style="color: #999" />
+          </view>
+          
+          <view class="submit-btn" bindtap="onSubmitForm">提交回执</view>
+        </view>
+        <view class="safe-area-inset-bottom"></view>
+      </scroll-view>
+    </view>
+  </t-popup>
+</view>

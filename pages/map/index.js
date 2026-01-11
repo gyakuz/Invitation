@@ -18,7 +18,15 @@ Page({
     if (userId && friendMap[userId]) {
       friendData = friendMap[userId]
     } else if (inviteData) {
-      friendData = JSON.parse(inviteData)
+      let decoded = inviteData;
+      try {
+        decoded = decodeURIComponent(inviteData);
+      } catch (e) {}
+      try {
+        friendData = JSON.parse(decoded);
+      } catch (e) {
+        friendData = friendMap['default'];
+      }
     } else {
       friendData = friendMap['default']
     }
@@ -37,6 +45,11 @@ Page({
     console.log(newComponentId)
     this.startComponentAnimation(newComponentId);
   },
+
+  onBack() {
+    wx.navigateBack();
+  },
+
   onSwiperChange(e) {
     const newIndex = e.detail.current;
     const oldIndex = this.data.currentIndex;

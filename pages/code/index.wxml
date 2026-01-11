@@ -1,6 +1,6 @@
 <!-- pages/index/index.wxml -->
 <music />
-<view class="container">
+<view class="container" bindtap="skipTyping">
   <text class="typing-text">
     <text>{{ currentText }}</text>
   </text>

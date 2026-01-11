@@ -17,6 +17,7 @@ Page({
     showButton: false, // 控制按钮是否显示
     countdown: 10, // 新增：倒计时
     userId: '',
+    isTyping: false,
   },
 
   onLoad(options) {
@@ -50,6 +51,17 @@ Page({
     }, 500);
     this.preLoad()
   },
+
+  skipTyping() {
+    if (this.data.showButton) return;
+    this.isSkipped = true;
+    this.setData({
+      currentText: this.data.textArray.join('\n') + '\n',
+      isTyping: false
+    });
+    this.showButton();
+  },
+
   preLoad() {
     wx.loadFontFace({
       family: 'xcFont',
@@ -59,9 +71,15 @@ Page({
 
   // 打字机效果
   async startTypingEffect() {
+    if (this.data.isTyping) return;
+    this.setData({
+      isTyping: true
+    });
     let currentText = '';
     for (const line of this.data.textArray) {
+      if (this.isSkipped) return;
       for (const char of line) {
+        if (this.isSkipped) return;
         currentText += char;
         this.setData({
           currentText
@@ -74,7 +92,12 @@ Page({
       });
       await this.sleep(300); // 换行间隔
     }
-    this.showButton(); // 文字结束后显示按钮
+    if (!this.isSkipped) {
+      this.setData({
+        isTyping: false
+      });
+      this.showButton(); // 文字结束后显示按钮
+    }
   },
 
 
@@ -112,9 +135,8 @@ Page({
       true
     ));
 
-    // 倒计时逻辑
-    this.startCountdown();
-
+    // 倒计时逻辑 - 注释掉自动跳转逻辑
+    // this.startCountdown();
   },
   startCountdown() {
     let remaining = 8;
@@ -130,18 +152,18 @@ Page({
     }, 1000);
   },
 
-  // 跳转到 map 页面
+  // 跳转到播放页
   onButtonClick() {
     clearInterval(this.countdownTimer);
     wx.vibrateShort({
       type: 'medium',
       complete: () => {
+        const inviteData = encodeURIComponent(JSON.stringify(this.data.inviteData || {}));
         wx.redirectTo({
-          url: `/pages/map/index?userId=${this.data.userId}&inviteData=${JSON.stringify(this.data.inviteData)}`,
+          url: `/pages/player/index?userId=${this.data.userId}&inviteData=${inviteData}`
         });
       }
-    })
-
+    });
   },
 
   sleep(ms) {

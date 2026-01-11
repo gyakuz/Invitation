@@ -1,5 +1,22 @@
-<me-waterfall custom-class="water-fall">
-  <me-waterfall-item custom-class="water-fall-item" wx:for="{{list}}" wx:key="index">
-    <image class="image" src="{{item}}" mode="aspectFill" style="margin-bottom: 20rpx;" capture-bind:tap="open" data-item="{{item}}" data-index="{{index}}" />
-  </me-waterfall-item>
-</me-waterfall>
+<view class="container">
+  <view class="topbar">
+    <view class="back-btn" bindtap="onBack">
+      <t-icon name="chevron-left" size="48rpx" color="#fff" />
+    </view>
+    <view class="title">美好瞬间</view>
+  </view>
+
+  <scroll-view class="photo-scroll" scroll-y>
+    <view class="photo-grid">
+      <me-waterfall custom-class="water-fall">
+        <me-waterfall-item custom-class="water-fall-item" wx:for="{{list}}" wx:key="index">
+          <view class="card">
+            <image class="image" src="{{item}}" mode="widthFix" capture-bind:tap="open" data-item="{{item}}" data-index="{{index}}" />
+            <view class="card-mask"></view>
+          </view>
+        </me-waterfall-item>
+      </me-waterfall>
+    </view>
+    <view class="safe-area"></view>
+  </scroll-view>
+</view>

@@ -1,6 +1,8 @@
 {
+  "navigationStyle": "custom",
   "usingComponents": {
     "me-waterfall": "me-waterfall/waterfall/index",
-    "me-waterfall-item": "me-waterfall/waterfall-item/index"
+    "me-waterfall-item": "me-waterfall/waterfall-item/index",
+    "t-icon": "tdesign-miniprogram/icon/icon"
   }
 }

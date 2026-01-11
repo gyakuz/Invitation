@@ -12,6 +12,7 @@
     "invite10": "../invite10/index",
     "invite11": "../invite11/index",
     "invite12": "../invite12/index",
-    "invite13": "../invite13/index"
+    "invite13": "../invite13/index",
+    "t-icon": "tdesign-miniprogram/icon/icon"
   }
 }

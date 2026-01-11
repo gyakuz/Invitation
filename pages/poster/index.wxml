@@ -1,7 +1,7 @@
 <view class="container-poster">
-  <image class="flower-image" src="https://h5cdn.hunbei.com/editorCustomPic/2019-05-07_5cd0ebcb7c7cb.gif?imageMogr2/auto-orient/crop/!367x601a0a0/quality/90" mode="heightFix" />
+  <image class="flower-image" src="" mode="heightFix" />
   <view class="top">
-    <image class="image" src="https://h5cdn.hunbei.com/editorTempCustomPic/2025-4-11-5a8EMQGHNxkmKk3RakSbkCXnjMZPbheX.jpeg" mode="heightFix" />
+    <image class="image" src="/assets/pic2.jpg" mode="heightFix" />
     <view class="top-right">
       <text class="top-right-title">我们结婚啦</text>
       <text class="top-right-subtitle">We are married</text>
@@ -29,8 +29,8 @@
   </view>
 
   <view class="bottom-image">
-    <image class="image" src="https://h5cdn.hunbei.com/editorTempCustomPic/2025-4-11-EN7SMn7i6wQxfhkN6XYtjpQ58hGcncBC.jpeg" mode="aspectFill" style="width: 320rpx;" />
-    <image class="image" mode="aspectFill" style="width: 320rpx;" src="https://h5cdn.hunbei.com/editorMini/2025-4-3-zQmpTKizPQWipEF7yK5RRWfyHY6xEb6K?imageMogr2/auto-orient/rotate/0/crop/!2644x4096a43a0/quality/70|imageMogr2/thumbnail/597x924%3E/format/webp" />
+    <image class="image" src="/assets/pic2.jpg" mode="aspectFill" style="width: 320rpx;" />
+    <image class="image" mode="aspectFill" style="width: 320rpx;" src="/assets/pic2.jpg" />
 
   </view>
 
