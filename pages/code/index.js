@@ -176,14 +176,14 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: '诚邀参加肖亚&陈本拯婚礼',
+      title: '诚邀参加钟家勇&周真婚礼',
       path: '/pages/code/index',
       imageUrl: "https://h5cdn.hunbei.com/editorTempCustomPic/2025-4-16-jSx6DhDhriAn5CHCBmjiSmGFy2fPdBNt"
     }
   },
   onShareTimeline() {
     return {
-      title: '诚邀参加肖亚&陈本拯婚礼',
+      title: '诚邀参加钟家勇&周真婚礼',
       path: '/pages/code/index',
       imageUrl: "https://h5cdn.hunbei.com/editorTempCustomPic/2025-4-16-jSx6DhDhriAn5CHCBmjiSmGFy2fPdBNt"
     }

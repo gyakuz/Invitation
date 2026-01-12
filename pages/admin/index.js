@@ -71,7 +71,7 @@ Page({
   onShareAppMessage() {
     console.log(this.data.custom)
     return {
-      title: `${this.data.selectedFriend?.name||this.data.custom.name}~诚邀参加肖亚&陈本拯婚礼`,
+      title: `${this.data.selectedFriend?.name||this.data.custom.name}~诚邀参加钟家勇&周真婚礼`,
       path: `/pages/code/index?userId=${this.data.selectedFriend?.id}&name=${this.data.custom.name}&welcome=${this.data.custom.welcome}&location=${this.data.custom.location}`,
       imageUrl: "https://h5cdn.hunbei.com/editorTempCustomPic/2025-4-16-jSx6DhDhriAn5CHCBmjiSmGFy2fPdBNt"
     };
