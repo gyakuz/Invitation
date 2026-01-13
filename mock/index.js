@@ -1,4 +1,14 @@
 export const locationMap = {
+  'shitang': {
+    date: '2026-05-20',
+    year: 2026,
+    month: 5,
+    day: 20,
+    nongLi: '丙午年四月初四',
+    location: '浙江省温岭市石塘镇奢野既来',
+    latitude: 28.2775,
+    longitude: 121.6255,
+  },
   'sichuan': {
     date: '2025-05-01',
     year: 2025,
@@ -23,10 +33,10 @@ export const locationMap = {
 const xyFriendMap = {
   'zhiwei': {
     name: 'xx',
-    ...locationMap['wuhan'],
+    ...locationMap['shitang'],
     welcome: [
       "xx~ 终于到我发邀请函啦！",
-      "2025 年 5 月 10 日，我要结婚咯！",
+      "2026 年 5 月 20 日，我要结婚咯！",
       "xxxxxxx~",
       "有空的话来吃我的席呀！",
       "望我们，岁岁年年，同欢共乐！",
@@ -40,12 +50,13 @@ const cbzFriendMap = {
 }
 export const friendMap = {
   'default': {
-    name: '默认',
-    ...locationMap['wuhan'],
+    name: '朋友',
+    ...locationMap['shitang'],
     welcome: [
       "朋友们~ 终于到我发邀请函啦！",
-      "2025 年 5 月 10 日，我要结婚咯！",
-      "如果你有时间，来吃我的席呀！",
+      "我们将于 2026 年 5 月 20 日举行婚礼",
+      "地点在温岭市石塘镇奢野既来",
+      "如果你有时间，来吃我们的席呀！",
       "望我们，岁岁年年，同欢共乐！"
     ],
   },

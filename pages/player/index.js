@@ -60,7 +60,19 @@ Page({
   },
 
   onAddressTap() {
-    wx.showToast({ title: '地址按钮已预留', icon: 'none' });
+    this.onOpenLocation();
+  },
+
+  onOpenLocation() {
+    wx.openLocation({
+      latitude: 28.2775,
+      longitude: 121.6255,
+      name: '奢野既来',
+      address: '浙江省温岭市石塘镇奢野既来',
+      success: () => {
+        console.log('Open location success');
+      }
+    });
   },
 
   onPhotoTap() {
