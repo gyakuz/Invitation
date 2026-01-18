@@ -183,4 +183,6 @@
       </scroll-view>
     </view>
   </t-popup>
+
+  <music />
 </view>

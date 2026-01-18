@@ -25,9 +25,34 @@ Page({
 
   onLoad(options) {
     const { userId = '', inviteData = '' } = options || {};
-    this.setData({ entryUserId: userId, entryInviteData: inviteData });
+    this.setData({ 
+      entryUserId: userId, 
+      entryInviteData: inviteData,
+      isPlaying: getApp().globalData.isPlay
+    });
     this.updateTimeText();
     this.fetchComments();
+
+    // 监听全局播放器状态，实现多页面联动
+    const audioCtx = getApp().globalData.audioCtx;
+    if (audioCtx) {
+      audioCtx.onTimeUpdate(() => {
+        if (!this.data.isSeeking) {
+          this.setData({
+            currentTime: audioCtx.currentTime,
+            duration: audioCtx.duration || this.data.duration
+          }, () => this.updateTimeText());
+        }
+      });
+      audioCtx.onPlay(() => this.setData({ isPlaying: true }));
+      audioCtx.onPause(() => this.setData({ isPlaying: false }));
+    }
+  },
+
+  onShow() {
+    this.setData({
+      isPlaying: getApp().globalData.isPlay
+    });
   },
 
   fetchComments() {
@@ -127,7 +152,13 @@ Page({
   },
 
   onTogglePlay() {
-    this.setData({ isPlaying: !this.data.isPlaying });
+    const isPlaying = !this.data.isPlaying;
+    this.setData({ isPlaying });
+    if (isPlaying) {
+      getApp().playMusic();
+    } else {
+      getApp().pauseMusic();
+    }
   },
 
   onPrev() {
@@ -140,7 +171,17 @@ Page({
 
   onSeek(e) {
     const value = Number((e && e.detail && e.detail.value) || 0);
-    this.setData({ currentTime: value }, () => this.updateTimeText());
+    this.setData({ currentTime: value, isSeeking: true }, () => {
+      this.updateTimeText();
+      const audioCtx = getApp().globalData.audioCtx;
+      if (audioCtx) {
+        audioCtx.seek(value);
+        // 延迟恢复自动更新，防止拖动时跳动
+        setTimeout(() => {
+          this.setData({ isSeeking: false });
+        }, 500);
+      }
+    });
   },
 
   updateTimeText() {

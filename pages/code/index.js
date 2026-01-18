@@ -155,15 +155,15 @@ Page({
   // 跳转到播放页
   onButtonClick() {
     clearInterval(this.countdownTimer);
-    wx.vibrateShort({
-      type: 'medium',
-      complete: () => {
-        const inviteData = encodeURIComponent(JSON.stringify(this.data.inviteData || {}));
-        wx.redirectTo({
-          url: `/pages/player/index?userId=${this.data.userId}&inviteData=${inviteData}`
-        });
-      }
-    });
+    // 缩短渐隐时间，提升响应感
+    this.btnOpacity.value = timing(0, { duration: 200 });
+    
+    const inviteData = encodeURIComponent(JSON.stringify(this.data.inviteData || {}));
+    setTimeout(() => {
+      wx.redirectTo({
+        url: `/pages/player/index?userId=${this.data.userId}&inviteData=${inviteData}`
+      });
+    }, 200);
   },
 
   sleep(ms) {

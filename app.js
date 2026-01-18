@@ -3,6 +3,10 @@ import updateManager from './common/updateManager';
 App({
   onShow() {
     updateManager();
+    // 解决从地图等原生页面返回后，InnerAudioContext 可能会被系统暂停的问题
+    if (this.globalData.isPlay && this.globalData.audioCtx && this.globalData.audioCtx.paused) {
+      this.globalData.audioCtx.play();
+    }
   },
 
   globalData: {
@@ -10,12 +14,30 @@ App({
     isPlay: true, // 音乐播放状态
   },
   onLaunch() {
-    this.globalData.audioCtx = wx.createInnerAudioContext();
-    this.globalData.audioCtx.src = 'https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1744098791826/EverybodyKnowsILoveYou.mp3';
-    this.globalData.audioCtx.autoplay = true;
-    this.globalData.audioCtx.loop = true;
-    this.globalData.audioCtx.obeyMuteSwitch = false;
-    this.globalData.audioCtx.play();
+    const audioCtx = wx.createInnerAudioContext();
+    this.globalData.audioCtx = audioCtx;
+    
+    audioCtx.src = 'https://kolaok.com/music/1.mp3';
+    audioCtx.autoplay = true;
+    audioCtx.loop = true;
+    
+    // 监听播放状态更新全局变量
+    audioCtx.onPlay(() => {
+      this.globalData.isPlay = true;
+    });
+    audioCtx.onPause(() => {
+      this.globalData.isPlay = false;
+    });
+    audioCtx.onError((res) => {
+      console.error('播放报错', res);
+    });
+
+    // 解决部分机型首次加载不自动播放的问题
+    audioCtx.onCanplay(() => {
+      if (this.globalData.isPlay) {
+        audioCtx.play();
+      }
+    });
   },
   playMusic() {
     this.globalData.isPlay = true;

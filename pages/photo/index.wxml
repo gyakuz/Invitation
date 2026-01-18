@@ -12,8 +12,10 @@
         <me-waterfall-item custom-class="water-fall-item" wx:for="{{list}}" wx:key="index">
           <view class="card">
             <image class="image" src="{{item}}" mode="widthFix" capture-bind:tap="open" data-item="{{item}}" data-index="{{index}}" />
-            <view class="card-mask"></view>
-          </view>
+            <view class="card-mask">  </view>
+</view>
+
+<music />
         </me-waterfall-item>
       </me-waterfall>
     </view>

@@ -21,7 +21,9 @@
   "lazyCodeLoading": "requiredComponents",
   "componentFramework": "glass-easel",
   "renderer": "skyline",
-  "usingComponents": {},
+  "usingComponents": {
+    "music": "/components/music/index"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

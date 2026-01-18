@@ -12,6 +12,19 @@ Component({
       this.setData({
         isPlay: getApp().globalData.isPlay
       });
+      // 监听音频状态，确保组件状态与全局同步
+      const audioCtx = getApp().globalData.audioCtx;
+      if (audioCtx) {
+        audioCtx.onPlay(() => this.setData({ isPlay: true }));
+        audioCtx.onPause(() => this.setData({ isPlay: false }));
+      }
+    }
+  },
+  pageLifetimes: {
+    show() {
+      this.setData({
+        isPlay: getApp().globalData.isPlay
+      });
     }
   },
   /**
@@ -27,18 +40,13 @@ Component({
    */
   methods: {
     toggleMusic() {
-      wx.vibrateShort({
-        type: 'medium',
-        complete: () => {
-          this.setData({
-            isPlay: !this.data.isPlay
-          }, () => {
-            if (this.data.isPlay) {
-              getApp().playMusic();
-            } else {
-              getApp().pauseMusic();
-            }
-          })
+      this.setData({
+        isPlay: !this.data.isPlay
+      }, () => {
+        if (this.data.isPlay) {
+          getApp().playMusic();
+        } else {
+          getApp().pauseMusic();
         }
       })
 
