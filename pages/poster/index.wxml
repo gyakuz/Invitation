@@ -1,7 +1,7 @@
 <view class="container-poster">
   <image class="flower-image" src="" mode="heightFix" />
   <view class="top">
-    <image class="image" src="/assets/pic2.jpg" mode="heightFix" />
+    <image class="image" src="https://kolaok.com/picture/2.jpg" mode="heightFix" />
     <view class="top-right">
       <text class="top-right-title">我们结婚啦</text>
       <text class="top-right-subtitle">We are married</text>
@@ -29,8 +29,8 @@
   </view>
 
   <view class="bottom-image">
-    <image class="image" src="/assets/pic2.jpg" mode="aspectFill" style="width: 320rpx;" />
-    <image class="image" mode="aspectFill" style="width: 320rpx;" src="/assets/pic2.jpg" />
+    <image class="image" src="https://kolaok.com/picture/2.jpg" mode="aspectFill" style="width: 320rpx;" />
+    <image class="image" mode="aspectFill" style="width: 320rpx;" src="https://kolaok.com/picture/2.jpg" />
 
   </view>
 

@@ -1,6 +1,6 @@
 Page({
   data: {
-    albumImage: '/assets/pic.jpg',
+    albumImage: 'https://kolaok.com/picture/1.jpg',
     songTitle: '献给永远的',
     artist: '钟家勇 / 周真',
     isPlaying: true,
